@@ -8,6 +8,9 @@
     padding-bottom:50px ;
 }
 
+a{
+    text-decoration: none;
+}
 
 a.agendar{
     color: #f51d1da9;
@@ -17,4 +20,9 @@ a.agendar{
     background: none;
     height: 80vh;
     margin: 0;
+}
+
+
+a{
+    text-decoration: none;
 }
