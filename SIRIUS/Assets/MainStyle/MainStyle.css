@@ -1,5 +1,88 @@
+
+
 *{
     margin:0;
     padding:0;
+    list-style-type: none;
+    border: none;
     
+}
+header{
+    color: white;
+    overflow: hidden;
+  padding-top: 10px;
+}
+.container-desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+body{
+    font-family: "SUSE", sans-serif;
+}
+.desktop{
+    display: flex;
+    gap: 50px;
+}
+
+.dot{
+    color: red;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+}
+.desktop a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: block;
+    transition: .5s;
+}
+
+
+.desktop a:hover{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #7a0c0c67;
+    border-radius: 30px;
+}
+
+.primeira{
+    background: url(../imgs/primeira\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: #000000a6;
+}
+
+.txt{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+    border: 1px solid;
+    color: white;
+}
+
+.txt button{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.txt button:hover{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
 }
