@@ -1,3 +1,5 @@
+@extends('dashboard.default')
+@section('content')
 <div class="container-fluid">
     <h2>Sistema de Relatórios</h2>
     <p>Gere e visualize relatórios detalhados.</p>
@@ -30,3 +32,5 @@
         <!-- Inserir gráficos, tabelas ou PDFs conforme necessário -->
     </div>
 </div>
+
+@endsection

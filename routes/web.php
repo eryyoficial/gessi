@@ -16,12 +16,12 @@ Route::get('/gessi', function () {
 
 
 Route::get('/admin/residents', [DashboardController::class, 'residents'])->name('dashboard.residents');
-Route::get('/admin/caregivers', [DashboardController::class, 'caregivers'])->name('admin.caregivers');
-Route::get('/admin/volunteers', [DashboardController::class, 'volunteers'])->name('admin.volunteers');
-Route::get('/admin/donations', [DashboardController::class, 'donations'])->name('admin.donations');
-Route::get('/admin/activities', [DashboardController::class, 'activities'])->name('admin.activities');
-Route::get('/admin/reports', [DashboardController::class, 'reports'])->name('admin.reports');
-Route::get('/admin/default', [DashboardController::class, 'default'])->name('admin.default');
+Route::get('/admin/caregivers', [DashboardController::class, 'caregivers'])->name('dashboard.caregivers');
+Route::get('/admin/volunteers', [DashboardController::class, 'volunteers'])->name('dashboard.volunteers');
+Route::get('/admin/donations', [DashboardController::class, 'donations'])->name('dashboard.donations');
+Route::get('/admin/activities', [DashboardController::class, 'activities'])->name('dashboard.activities');
+Route::get('/admin/reports', [DashboardController::class, 'reports'])->name('dashboard.reports');
+Route::get('/admin/default', [DashboardController::class, 'default'])->name('dashboard.default');
 Route::get('/admin', [DashboardController::class, 'index'])->name('dashboard.index');
 
 

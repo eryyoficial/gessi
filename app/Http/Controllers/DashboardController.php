@@ -3,17 +3,49 @@
 namespace App\Http\Controllers;
 
 use App\Models\Resident;
-use App\Models\Visit;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        $residents_count = Resident::count();
-        $visits_count = Visit::count();
-        $upcoming_visits = Visit::whereDate('scheduled_date', '>=', now())->orderBy('scheduled_date')->get();
+        return view('dashboard.index');
+    }
 
-        return view('dashboard.index', compact('residents_count', 'visits_count', 'upcoming_visits'));
+
+
+    public function residents()
+    {
+        return view('dashboard.residents');
+    }
+
+    public function caregivers()
+    {
+        return view('dashboard.caregivers');
+    }
+
+    public function volunteers()
+    {
+        return view('dashboard.volunteers');
+    }
+
+    public function donations()
+    {
+        return view('dashboard.donations');
+    }
+
+    public function activities()
+    {
+        return view('dashboard.activities');
+    }
+
+    public function reports()
+    {
+        return view('dashboard.reports');
+    }
+
+    public function default()
+    {
+        return view('dashboard.default'); // Ou qualquer página padrão
     }
 }

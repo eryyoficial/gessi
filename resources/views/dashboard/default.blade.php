@@ -53,43 +53,37 @@
             <hr>
             <ul class="nav nav-pills flex-column">
                 <li>
-                    <a href="#" id="link-residentes" class="nav-link link-body-emphasis text-light"
-                        data-content="residents">
+                    <a href="{{route('dashboard.residents')}}" id="link-residentes" class="nav-link link-body-emphasis text-light">
                         <i class="ri-user-line me-1"></i>
                         Residentes
                     </a>
                 </li>
                 <li>
-                    <a href="#" id="link-cuidadores" class="nav-link link-body-emphasis text-light"
-                        data-content="caregivers">
+                    <a href="{{route('dashboard.caregivers')}}" id="link-cuidadores" class="nav-link link-body-emphasis text-light">
                         <i class="ri-group-line me-1"></i>
                         Cuidadores
                     </a>
                 </li>
                 <li>
-                    <a href="#" id="link-voluntarios" class="nav-link link-body-emphasis text-light"
-                        data-content="volunteers">
+                    <a href="{{route('dashboard.volunteers')}}" id="link-voluntarios" class="nav-link link-body-emphasis text-light">
                         <i class="ri-hand-heart-line me-1"></i>
                         Voluntários
                     </a>
                 </li>
                 <li>
-                    <a href="#" id="link-doacoes" class="nav-link link-body-emphasis text-light"
-                        data-content="donations">
+                    <a href="{{route('dashboard.donations')}}"id="link-doacoes" class="nav-link link-body-emphasis text-light">
                         <i class="ri-money-dollar-circle-line me-1"></i>
                         Doações
                     </a>
                 </li>
                 <li>
-                    <a href="#" id="link-atividades" class="nav-link link-body-emphasis text-light"
-                        data-content="activities">
+                    <a href="{{route('dashboard.activities')}}" id="link-atividades" class="nav-link link-body-emphasis text-light">
                         <i class="ri-calendar-line me-1"></i>
                         Atividades
                     </a>
                 </li>
                 <li>
-                    <a href="#" id="link-relatorios" class="nav-link link-body-emphasis text-light"
-                        data-content="reports">
+                    <a href="{{route('dashboard.reports')}}" id="link-relatorios" class="nav-link link-body-emphasis text-light">
                         <i class="ri-file-chart-line me-1"></i>
                         Relatórios
                     </a>
