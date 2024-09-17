@@ -5,19 +5,25 @@
     border: none;
     
 }
+<<<<<<< HEAD
 
 a.inicio{
     color: #f51d1da9;
 }
+=======
+>>>>>>> updates
 header{
     color: white;
     overflow: hidden;
   padding-top: 10px;
 }
+<<<<<<< HEAD
 
 .desktop i{
     font-size: 25px;
 }
+=======
+>>>>>>> updates
 .container-desktop{
     display: flex;
     justify-content: space-between;
@@ -41,20 +47,30 @@ body{
     font-weight: bold;
 }
 a{
+<<<<<<< HEAD
     text-decoration: none;   
 }
 
+=======
+ 
+    text-decoration: none;   
+}
+>>>>>>> updates
 .desktop a{
     color: white;
     padding: 10px;
     border-radius: 30px;
     display: block;
+<<<<<<< HEAD
 }
 
 a.inicio{
     color: #f51d1da9;
     text-decoration: underline;
     text-decoration-color: #f51d1da9;
+=======
+    transition: .5s;
+>>>>>>> updates
 }
 
 
@@ -62,19 +78,31 @@ a.inicio{
     color: white;
     padding: 10px;
     text-decoration: none;
+<<<<<<< HEAD
     text-decoration: underline;
     color: #f51d1da9;
     text-decoration-color: #f51d1da9;
+=======
+    background-color: #7a0c0c67;
+    border-radius: 30px;
+>>>>>>> updates
 }
 
 .primeira{
     background: url(../imgs/primeira\ \(1\).jpg);
     background-position: center;
+<<<<<<< HEAD
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: color;
     background-color: #000000be;
+=======
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: #000000a6;
+>>>>>>> updates
 }
 
 .txt{
@@ -136,7 +164,10 @@ a.inicio{
 }
 .servicos img{
     width: 200px;
+<<<<<<< HEAD
     height: 200px;
+=======
+>>>>>>> updates
     margin-bottom: 10px;
     border-radius: 20px;
 }
@@ -192,7 +223,11 @@ a.inicio{
     border-radius: 20px;
 }
 
+<<<<<<< HEAD
 .form input, textarea{
+=======
+.form input{
+>>>>>>> updates
     width: 100%;
     border-radius: 50px;
     background: none;
@@ -220,6 +255,7 @@ a.inicio{
 .terceiro input{
     margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
 .quarto{
     text-align: center;
@@ -275,6 +311,8 @@ footer{
 .copy{
     text-align: center;
 }
+=======
+>>>>>>> updates
 @media screen and (max-width:1024px){
    
 .servicos{
