@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Resident extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'dob', 'medical_conditions', 'assigned_caregiver_id'];
+    protected $fillable = ['name', 'age', 'gender', 'medical_history', 'status'];
+
+    public function visits()
+    {
+        return $this->hasMany(Visit::class);
+    }
 
 }

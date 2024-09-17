@@ -5,62 +5,61 @@ namespace App\Http\Controllers;
 use App\Models\Visit;
 use App\Http\Requests\StoreVisitRequest;
 use App\Http\Requests\UpdateVisitRequest;
+use App\Models\Resident;
+use Illuminate\Http\Request;
 
 class VisitController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        $visits = Visit::with('resident')->get();
+        return view('visits.index', compact('visits'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        $residents = Resident::all();
+        return view('visits.create', compact('residents'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreVisitRequest $request)
+    public function store(Request  $request)
     {
-        //
+        $validated = $request->validate([
+            'resident_id' => 'required|exists:residents,id',
+            'visitor_name' => 'required',
+            'scheduled_date' => 'required|date',
+            'scheduled_time' => 'required',
+        ]);
+
+        Visit::create($validated);
+
+        return redirect()->route('visits.index')->with('success', 'Visit scheduled successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Visit $visit)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(Visit $visit)
     {
-        //
+        $residents = Resident::all();
+        return view('visits.edit', compact('visit', 'residents'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateVisitRequest $request, Visit $visit)
+    public function update(Request $request, Visit $visit)
     {
-        //
+        $validated = $request->validate([
+            'resident_id' => 'required|exists:residents,id',
+            'visitor_name' => 'required',
+            'scheduled_date' => 'required|date',
+            'scheduled_time' => 'required',
+        ]);
+
+        $visit->update($validated);
+
+        return redirect()->route('visits.index')->with('success', 'Visit updated successfully.');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Visit $visit)
     {
-        //
+        $visit->delete();
+
+        return redirect()->route('visits.index')->with('success', 'Visit deleted successfully.');
     }
 }
