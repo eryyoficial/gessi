@@ -63,8 +63,8 @@ a.inicio{
     padding: 10px;
     text-decoration: none;
     text-decoration: underline;
-    color: #7a0c0c67;
-    text-decoration-color: #7a0c0c67;
+    color: #f51d1da9;
+    text-decoration-color: #f51d1da9;
 }
 
 .primeira{
@@ -136,6 +136,7 @@ a.inicio{
 }
 .servicos img{
     width: 200px;
+    height: 200px;
     margin-bottom: 10px;
     border-radius: 20px;
 }
@@ -191,7 +192,7 @@ a.inicio{
     border-radius: 20px;
 }
 
-.form input{
+.form input, textarea{
     width: 100%;
     border-radius: 50px;
     background: none;
@@ -274,7 +275,6 @@ footer{
 .copy{
     text-align: center;
 }
-
 @media screen and (max-width:1024px){
    
 .servicos{
